@@ -21,7 +21,7 @@ void sleep_ms(__int64 milliseconds) {
 #else
 #include <unistd.h>
 void sleep_ms(__useconds_t milliseconds) {
-    ::usleep(milliseconds * 1000);
+    ::sleep_ms(milliseconds * 1000);
 }
 #endif
 
